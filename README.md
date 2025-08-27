@@ -7,6 +7,12 @@ Ele foi desenvolvido como parte de um **laboratório prático da certificação 
 
 O objetivo é demonstrar, de forma prática, como configurar fluxos de dados para carregar, transformar e disponibilizar informações de forma escalável, segura e integrada.
 
+O pipeline realiza a comparação de um registro específico com uma base de dados maior para identificar se ele já existe.
+- Fontes de dados: importa informações de duas origens — uma tabela no Data Warehouse e um arquivo CSV.
+- Coleta e transformação: os dados são unificados e passam por uma etapa de transformação, onde o registro da tabela do Data Warehouse é comparado com os registros do arquivo CSV.
+- Validação: nessa etapa, é verificado se o registro já está presente na base maior.
+- Exportação: o resultado final é gravado em uma tabela externa para consulta e uso posterior.
+
 ---
 
 ## ⚙️ Tecnologias Utilizadas
